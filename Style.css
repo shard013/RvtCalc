@@ -1,0 +1,10 @@
+﻿.Resource:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: underline;
+}

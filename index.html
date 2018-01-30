@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Rocket Valley Tycoon Calculator</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+    <div style="display: table;">
+        <div style="display: table-row;">
+
+            <div id="Resources" style="width: 320px; display: table-cell; padding: 5px;">
+                <h4>Amount wanted:</h4>
+                <div>
+                    <input id="AmountWanted" type="number" value="1" style="width: 60px;" /> per
+                    <input id="Period" type="number" value="1" style="width: 60px;" />
+                    <select id="PeriodType">
+                        <option>second</option>
+                        <option>minute</option>
+                        <option>hour</option>
+                        <option>day</option>
+                    </select>
+                </div>
+
+                <h4>Resource:</h4>
+                <div id="ResourcesList"></div>
+            </div>
+
+            <div id="Required" style="display: none; padding: 5px; padding-left: 20px; border-left: 1px solid">
+                <h4></h4>
+                <table>
+                    <thead>
+                        <tr style="font-weight: 600; text-align: center;">
+                            <td width="200px">Resource</td>
+                            <td width="115px">Amount</td>
+                            <td width="135px">Approx Extractors</td>
+                        </tr>
+                    </thead>
+                    <tbody id="RequiredMinedList"></tbody>
+                </table>
+                <div>&nbsp;</div>
+                <table>
+                    <thead>
+                        <tr style="font-weight: 600; text-align: center;">
+                            <td width="200px">Resource</td>
+                            <td width="115px">Amount</td>
+                            <td width="135px"></td>
+                        </tr>
+                    </thead>
+                    <tbody id="RequiredBuiltList"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Resources.js"></script>
+    <script src="RocketValleyCalc.js"></script>
+</body>
+</html>
