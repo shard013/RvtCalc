@@ -1,10 +1,67 @@
-﻿.Resource:hover {
-    text-decoration: underline;
-}
-a {
+﻿a {
     text-decoration: none;
     color: #000000;
 }
-a:hover {
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+input {
+    width: 60px;
+}
+
+.Options {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.OptionsDiv {
+    display: table-cell;
+    padding: 5px 25px 5px 5px;
+}
+
+label.Options {
+    width: 50px;
+    display: inline-block;
+}
+
+.NumberCell {
+    text-align: right;
+}
+
+.RequiredDiv {
+    display: none;
+    padding: 5px;
+    padding-left: 20px;
+    border-left: 1px solid
+}
+
+.RequiredRow {
+    font-weight: 600;
+    text-align: center;
+}
+
+    .RequiredRow th:nth-child(1) {
+        width: 200px;
+    }
+
+    .RequiredRow th:nth-child(2) {
+        width: 115px;
+    }
+
+    .RequiredRow th:nth-child(3) {
+        width: 135px;
+    }
+
+.Resource:hover {
     text-decoration: underline;
+}
+
+.Table {
+    display: table;
+}
+
+.TableRow {
+    display: table-row;
 }

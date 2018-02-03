@@ -7,15 +7,25 @@
 </head>
 <body>
 
-    <div style="display: table;">
-        <div style="display: table-row;">
+    <div class="Table">
+        <div class="TableRow">
 
-            <div id="Resources" style="width: 320px; display: table-cell; padding: 5px;">
+            <div id="Resources" class="OptionsDiv">
                 <h4>Amount wanted:</h4>
                 <div>
-                    <input id="AmountWanted" type="number" value="1" style="width: 60px;" /> per
-                    <input id="Period" type="number" value="1" style="width: 60px;" />
-                    <select id="PeriodType">
+                    <label class="Options">Amount:</label>
+                    <input id="AmountWanted" class="Options" type="number" value="1" />
+                </div>
+                <div>
+                    <select id="Resource" class="Options">
+                        <option>Select resource...</option>
+                        <option>Basic Electronic Components</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="Options">Per:</label>
+                    <input id="Period" class="Options" type="number" value="1" />
+                    <select id="PeriodType" class="Options">
                         <option>second</option>
                         <option>minute</option>
                         <option>hour</option>
@@ -23,29 +33,38 @@
                     </select>
                 </div>
 
-                <h4>Resource:</h4>
-                <div id="ResourcesList"></div>
+                <div>&nbsp;</div>
+                <div>Production Boosts</div>
+                <div>
+                    <label class="Options">Cola:</label>
+                    <input id="ColaBoost" class="Options" type="number" value="1" />x
+                </div>
+                <div>
+                    <label class="Options">Tech:</label>
+                    <input id="TechBoost" class="Options" type="number" value="100.0" />%
+                </div>
+
             </div>
 
-            <div id="Required" style="display: none; padding: 5px; padding-left: 20px; border-left: 1px solid">
+            <div id="Required" class="RequiredDiv">
                 <h4></h4>
-                <table>
+                <table id="RequiredExtractors">
                     <thead>
-                        <tr style="font-weight: 600; text-align: center;">
-                            <td width="200px">Resource</td>
-                            <td width="115px">Amount</td>
-                            <td width="135px">Approx Extractors</td>
+                        <tr class="RequiredRow">
+                            <th>Resource</th>
+                            <th>Amount</th>
+                            <th>Approx Extractors</th>
                         </tr>
                     </thead>
                     <tbody id="RequiredMinedList"></tbody>
                 </table>
                 <div>&nbsp;</div>
-                <table>
+                <table id="ReqiredFactories">
                     <thead>
-                        <tr style="font-weight: 600; text-align: center;">
-                            <td width="200px">Resource</td>
-                            <td width="115px">Amount</td>
-                            <td width="135px"></td>
+                        <tr class="RequiredRow">
+                            <th>Resource</th>
+                            <th>Amount</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody id="RequiredBuiltList"></tbody>
